@@ -3,7 +3,7 @@ services:
     name: surface-defect-detector
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: PYTHONPATH=. streamlit run src/app.py --server.port 10000 --server.enableCORS false
+    startCommand: PYTHONPATH=. streamlit run App/app.py --server.port 10000 --server.enableCORS false
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.7
